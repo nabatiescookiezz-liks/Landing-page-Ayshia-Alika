@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+:root {
+    --warna-utama: #9999f4;
+    --warna-gelap: #1f2937;
+    --warna-terang: #f5f7ff;
+    --warna-putih: #ffffff;
+}
+
+header {
+    background-color: var(--warna-utama);
+    color: var(--warna-putih);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+nav {
+    background-color: var(--warna-gelap);
+    padding: 15px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--warna-putih);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a {
+    color: var(--warna-putih);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--warna-utama);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+#home {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#home figure {
+    margin: 0;
+    text-align: center;
+}
+
+#home img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--warna-gelap);
+}
+
+#home p {
+    font-size: 1.1rem;
+}
+
+#home figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    #home img {
+        width: 220px;
+        height: 220px;
+    }
+
+    #kontak form {
+        padding: 20px;
+    }
+}
+
+
+.home-text {
+    flex: 1;
+}
+
+#tentang {
+    background-color: var(--warna-terang);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+#tentang h2 {
+    color: var(--warna-utama);
+}
+
+#pendidikan h2,
+#pengalaman h2,
+#kontak h2 {
+    color: var(--warna-utama);
+}
+
+article {
+    background-color: var(--warna-terang);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+    border-left: 5px solid var(--warna-utama);
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+article h3 {
+    margin-top: 0;
+    color: var(--warna-gelap);
+}
+
+aside {
+    background-color: var(--warna-gelap);
+    color: var(--warna-putih);
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+aside h2,
+aside h3 {
+    color: var(--warna-putih);
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+#kontak {
+    padding: 60px 20px;
+}
+
+#kontak form {
+    max-width: 700px;
+    margin: 30px auto 0;
+    background-color: var(--warna-terang);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#kontak label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--warna-gelap);
+}
+
+#kontak input,
+#kontak textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+#kontak input:focus,
+#kontak textarea:focus {
+    outline: none;
+    border-color: var(--warna-utama);
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+}
+
+#kontak button {
+    background-color: var(--warna-utama);
+    color: var(--warna-putih);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#kontak button:hover {
+    opacity: 0.85;
+}
+
+footer {
+    background-color: var(--warna-gelap);
+    color: var(--warna-putih);
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+nav a,
+#kontak button,
+article {
+    transition: 0.3s ease;
+}
